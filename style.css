@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  background: linear-gradient(
+    -45deg,
+    white,
+    #ea7af4,
+    #b43e8f,
+    #6200b3,
+    #3b0086,
+    #14002e
+  );
+  background-size: 400% 400%;
+  animation: gradient 8s ease infinite;
+  height: 80vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.nav-container {
+  display: flex;
+  justify-content: flex-end;
+  /* Additional styles for positioning */
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+}
+
+.nav-list ul {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px;
+}
+
+.nav-list li {
+  list-style: none;
+  margin-left: 10px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-list a:hover {
+  text-decoration: underline;
+}
+
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  color: white;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+.into-container h1 {
+  font: 100;
+}
+
+.intro-container button {
+  border-radius: 16px;
+  padding: 12px;
+  margin-top: 12px;
+  background: linear-gradient(-45deg, white, #b43e8f, #6200b3, #3b0086);
+  border: 2px solid white;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.into-container button:hover {
+  background-color: #fff;
+}
+
+.into-container button:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-74 {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
